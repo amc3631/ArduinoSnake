@@ -60,7 +60,7 @@ IM0 - IM3       NOT CONNECTED (they expect a 3.3v signal, DON'T CONNECT!)
 CCS             6
 CD              NOT CONNECTED
 
-2. Wiring the joystick 1:
+2. Wiring joystick 1:
 
 
 A1             VRx
@@ -70,7 +70,7 @@ GND            GND
 5V             5V
 
 
-2. Wiring the joystick 2
+2. Wiring joystick 2
 
 A9             VRx
 A8             VRy
@@ -78,8 +78,9 @@ A8             VRy
 GND            GND
 5V             5V
 
-Upload Instruction:
-Load it from Arduino IDE and upload from there.
+Upload Instructions:
+Load it from Arduino IDE and upload from there. Alternatively, use the 'make upload' command in terminal while in the 
+directory with the makefile and cpp file.
 
 
 Reference:
