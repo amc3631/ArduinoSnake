@@ -1,0 +1,90 @@
+//Authors:
+
+//Jingyuan Zhang
+//Michael Boisvert
+
+Description:
+
+1. recreate the Snake game in the arduino.
+2. including two modes(1 PLAYER MODE & 2 PLAYER MODE)
+3. Apply two joystick when excuting the 2 Player mode, both are connected to one
+Arduino.
+4. Using an array to store the status of the snake and food.
+5. Using a structure to store the co-ordinate of the snake.
+6. Using a point array to store the track that the snake's head's movement.
+
+Game Rules:
+
+GENERAL
+1. When in the menu mode, only the joystick attached with pin A0, A1, and 2
+can scroll the menu.
+2. Using a joystick to control the direction which the snake move towards.
+
+ONE PLAYER MODE
+1. And in the 1 player mode, only this joystick can control the snake.
+
+TWO PLAYER MODE
+1. In the 2 player mode, the snake a is the white one, and snake b is the blue
+one.
+2. The joystick connected to the A0, A1, 2 PIN controls the white snake a.
+3. The joystick connected to the A8, A9, 13 PIN controls the blue snake b.
+4. The white snake will be initialized at the right bottom corner, and move
+towards left.
+5. The blue snake will be initialized at the left upper corner, and move towards
+right.
+6. One of the snakes dies, the game will over, and the snake who longer will win
+the game.If the length is same, it will be tie.
+
+
+
+
+Wiring Instruction:
+1. wiring the display:
+Board Pin <---> Arduino Pin
+===========================
+GND             GND
+Vin             5V
+3Vo             NOT CONNECTED
+CLK             52
+MISO            50
+MOSI            51
+CS              10
+D/C             9
+RST             NOT CONNECTED
+Lite            NOT CONNECTED
+Y+              A2 (analog pin)
+X+              4  (digital pin)
+Y-              5  (digital pin)
+X-              A3 (analog pin)
+IM0 - IM3       NOT CONNECTED (they expect a 3.3v signal, DON'T CONNECT!)
+CCS             6
+CD              NOT CONNECTED
+
+2. Wiring the joystick 1:
+
+
+A1             VRx
+A0             VRy
+2              SW
+GND            GND
+5V             5V
+
+
+2. Wiring the joystick 2
+
+A9             VRx
+A8             VRy
+13             SW
+GND            GND
+5V             5V
+
+Upload Instruction:
+Load it from Arduino IDE and upload from there.
+
+
+Reference:
+1. Arduino Reference
+link :https://www.arduino.cc
+
+2. Adafruit Graphics Library Documentation
+link: https://eclass.srv.ualberta.ca/pluginfile.php/3891318/mod_resource/content/1/adafruit-gfx-graphics-library.pdf
